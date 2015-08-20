@@ -15,7 +15,8 @@
 /**
  * Home Page
  */
-Route::get('/', 'PageController@home');
+
+Route::get('/', 'PagesController@home');
 
 
 /**
@@ -23,7 +24,7 @@ Route::get('/', 'PageController@home');
  */
 
 Route::controllers([
-    'auth' => 'Auth\AuthController',
+    'auth'     => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
 
 ]);
