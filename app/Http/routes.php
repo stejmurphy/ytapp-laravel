@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+/**
+ * Home Page
+ */
+Route::get('/', 'PageController@home');
+
+
+/**
+ * Auth
+ */
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+
+]);
+
