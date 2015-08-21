@@ -1,4 +1,4 @@
-## Youtube DMCA Laravel 5.1 LTS Application
+## Youtube DMCA Take Down Application ( Laravel 5.1 LTS Application )
 
 This is a a simple Youtube DMCA Take Down Request Application built on Laravel 5.1 and can be found as a tutorial series on [laracasts.com](http://laracasts.com/).
 
