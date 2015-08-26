@@ -24,7 +24,7 @@ class AuthController extends Controller
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     /**
-     * Where to redirect 
+     * Where to redirect
      */
 
     protected $redirectTo = 'notices/create';
