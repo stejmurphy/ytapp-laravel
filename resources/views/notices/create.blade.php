@@ -2,6 +2,6 @@
 
 @section('content')
 
-    Create a new notice
+    Create a new notice!
 
 @endsection
