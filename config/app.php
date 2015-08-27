@@ -138,6 +138,16 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Out of support, Consider using Laravel Collective's
+
+        Illuminate\Html\HtmlServiceProvider::class,
+        */
+        /*
+         * Laravel Collective's
+         */
+        Collective\Html\HtmlServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
@@ -192,6 +202,21 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+         * No longer supported after 5.0
+
+        'Form'      => Illuminate\Html\FormFacade::class,
+        'Html'      => Illuminate\Html\HtmlFacade::class,
+       */
+
+        /*
+         * Community maintained version
+         */
+
+        'Form'      => Collective\Html\FormFacade::class,
+        'Html'      => Collective\Html\HtmlFacade::class,
+
 
     ],
 

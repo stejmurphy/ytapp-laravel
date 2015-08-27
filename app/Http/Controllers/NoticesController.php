@@ -9,10 +9,26 @@ use App\Http\Controllers\Controller;
 
 class NoticesController extends Controller
 {
+	/**
+	 *  Create a new notices controller instance
+	 */
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
+
+	/**
+	 *  Show all notices
+	 */
+
     public function index()
 	{
 		return 'all notices';
 	}
+
+	/**
+	 * Show a page to create a new notice
+	 */
 
 	public function create()
 	{
