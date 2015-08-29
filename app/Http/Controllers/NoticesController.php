@@ -19,7 +19,7 @@ class NoticesController extends Controller
 	}
 
 	/**
-	 *  Show all notices
+	 *  Show all notices in the project
 	 */
 
     public function index()
