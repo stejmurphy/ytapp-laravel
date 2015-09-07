@@ -66,11 +66,16 @@ class NoticesController extends Controller
 	}
 
 
+	/**
+	 * @return mixed
+	 */
 	public function store()
 	{
-		$data = session()->get('dmca');
+		// $data = session()->get('dmca');
 
-		return \Request::input('template');
+		// return \Request::input('template');
+
+		
 	}
 
 
