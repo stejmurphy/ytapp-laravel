@@ -69,13 +69,17 @@ class NoticesController extends Controller
 	/**
 	 * @return mixed
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		// $data = session()->get('dmca');
+		$data = session()->get('dmca');
 
 		// return \Request::input('template');
+		$notice = Notice::open($data);
 
-		
+		$notice->useEmail($request->input('template'));
+
+		$notice->save();
+
 	}
 
 
